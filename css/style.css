@@ -57,7 +57,7 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-	color: #0A94DB;
+	color: #0342c5;
 }
 .colored {
 	color: #0A94DB;
@@ -150,7 +150,7 @@ blockquote {
 	text-align: left;
 }
 .subfooter {
-	background-color: #0A94DB;
+	background-color: #0342c5;
 	padding: 40px 0;
 }
 .subfooter a {
@@ -233,10 +233,10 @@ border:0px;
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background-color: #306AE8;
+	background-color: #0342c5;
 }
 .transprant-bg.blue:after {
-	background-color: rgba(85, 172, 238, 0.7);
+	background-color: #0342c5;
 }
 .transprant-bg .container {
 	z-index: 3;
@@ -361,7 +361,7 @@ text-align:center;
 }
 .btn-default {
 	color: #FFFFFF;
-	background: #0A94DB;
+	background: #0342c5;
 	border: 0;
 }
 .btn-default:hover {
@@ -527,7 +527,7 @@ padding: 10px 0;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
-	color: #356DE8;
+	color: #0342c5;
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
@@ -899,3 +899,44 @@ border-radius: 50%;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
+/* Team
+    ---------------------------------------------------*/
+	.team-member {
+		margin-bottom: 15px;
+	}
+	.member-img {
+		overflow: hidden; 
+		padding: 5px;
+		position:relative;
+	}
+	.team-member .member-img img {
+		max-width: 250px;
+		margin: 0 auto;
+		border-top: solid 4px #27AFD3;
+	}
+	.team-member h4 {
+		font-size: 19px;
+		line-height: 32px;
+		margin: 10px 0 0;
+		text-align: center;
+	}
+	.team-member .pos {
+		display: block;
+		margin: 0;
+		text-align: center;
+	}
+	.team-member .contact a {
+		padding: 0 8px;
+	}
+	.team-socials {
+		position:absolute;
+		bottom:70px;
+		left:0px;
+		right:0px;
+	}
+	.team-socials a {
+		background: white;
+		padding: 7px 0;
+		margin: 2px;
+	}
