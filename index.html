@@ -503,24 +503,25 @@
 						
 						<div class="col-sm-6">
 							<div class="footer-content">
-								<form role="form" id="footer-form">
+								<form role="form" id="footer-form" action="https://formspree.io/f/mvgpylgj" method="POST">
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="name2">Name</label>
-										<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
+										<input type="text" class="form-control" id="name2" placeholder="Name" name="name" required> <!-- Changed name attribute to 'name' -->
 										<i class="fa fa-user form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="email2">Email address</label>
-										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
+										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email" required> <!-- Changed name attribute to 'email' -->
 										<i class="fa fa-envelope form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="message2">Message</label>
-										<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
+										<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message" required></textarea> <!-- Changed name attribute to 'message' -->
 										<i class="fa fa-pencil form-control-feedback"></i>
 									</div>
 									<input type="submit" value="Send" class="btn btn-default">
 								</form>
+								
 							</div>
 						</div>
 						
@@ -583,6 +584,48 @@
 
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
+
+		<!-- Contact Us Form -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+			  var form = document.getElementById("footer-form");
+			  
+			  form.addEventListener("submit", function(event) {
+				event.preventDefault();    // Prevent the form from submitting through the HTML form action
+				var formData = new FormData(form);
+				var object = {};
+				formData.forEach(function(value, key){
+					object[key] = value;
+				});
+				var json = JSON.stringify(object);
+			
+				fetch(form.action, {
+				  method: 'POST',
+				  headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				  },
+				  body: json
+				}).then(response => {
+				  if (response.ok) {
+					form.reset(); // Reset the form to clear the fields
+					alert('Thanks for contacting us! We will be in touch with you shortly.'); // Provide your success message here
+				  } else {
+					response.json().then(data => {
+					  if (data.errors) {
+						alert(data.errors.map(error => error.message).join(", ")); // Show the error messages from Formspree
+					  } else {
+						alert('Oops! There was a problem submitting your form'); // Fallback error message
+					  }
+					});
+				  }
+				}).catch(error => {
+				  alert('Error: ' + error); // Error in the network request
+				});
+			  });
+			});
+			</script>
+			
 
 	</body>
 	
