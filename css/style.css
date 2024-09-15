@@ -245,8 +245,6 @@ border:0px;
 .bg-image-1 {
 	background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;
 }
-.bg-image-2 {
-}
 .caption-data {position: absolute; top: 50%; left: 34%; z-index: 20; text-align: left; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); transform: translate(-50%,-50%);text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);}
 .caption-data h1 {text-transform: uppercase;}
 .caption-data h1 span {font-size: inherit; line-height: inherit; font-weight: inherit;}
@@ -337,9 +335,6 @@ padding:40px 0;
 }
 .hero-caption h2{
 text-align:center;
-}
-.hero-caption p{
-
 }
 /* Template Components
 ----------------------------------------------------------------------------- */
@@ -752,10 +747,10 @@ border-radius: 50%;
 .social-links {
 	padding: 0;
 	list-style: none;
-	margin: 15px 0;
+	/*margin: 15px 0;*/
 }
 .social-links li {
-	margin: 10px 10px 10px 0;
+	/*margin: 10px 10px 10px 0;*/
 	display: inline-block;
 	font-size: 36px;
 }
@@ -796,8 +791,8 @@ border-radius: 50%;
 .social-links li.facebook a:hover {
 	color: #3b5998;
 }
-.social-links li.pinterest a:hover {
-	color: #cb2027;
+.social-links li.xing a:hover {
+	color: #026466;
 }
 
 /* Isotope Items
@@ -984,7 +979,7 @@ border-radius: 50%;
   .card-body {
 	text-wrap: wrap;
   }
-
+  
 	/*--- Clients ----*/
 #clients .clients-wrap {
     border-top: 1px solid #d6eaff;
