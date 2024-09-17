@@ -143,7 +143,7 @@ blockquote {
 }
 .banner-caption {
 	position: absolute;
-	top: 54%;
+	top: 70%;
 	width: 100%;
 	z-index: 2;
 	left: 0px;
@@ -1025,5 +1025,12 @@ border-radius: 50%;
     #clients .client-logo {
         padding: 30px;  /* Reduced padding for smaller screens */
     }
+}
+
+#language-switcher {
+	width: auto;
+	margin-top: 8px;
+	background-color: transparent;
+	border: none;
 }
  

@@ -32,10 +32,10 @@
 		<header class="header fixed clearfix navbar navbar-fixed-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-2">
 
 						<!-- header-left start --> 
-						<div class="header-left">
+						<div>
 
 							<!-- logo -->
 							<div class="logo-section smooth-scroll">
@@ -46,10 +46,10 @@
 						<!-- header-left end -->
 
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-10">
 
 						<!-- header-right start --> 
-						<div class="header-right">
+						<div>
 
 							<!-- main-navigation start --> 
 							<div class="main-navigation animated">
@@ -70,13 +70,21 @@
 
 										<!-- Collect the nav links, forms, and other content for toggling -->
 										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-											<ul class="nav navbar-nav navbar-right">
+											<ul class="nav navbar-nav ">
 												<li class="active"><a href="#banner">Home</a></li>
 												<li><a href="#services">We Offer</a></li>
 												<li><a href="#about">About Us</a></li>												
 												<li><a href="#team">Our Team</a></li>
 												<li><a href="#clients">Our Clients</a></li>
 												<li><a href="#contact">Contact Us</a></li>
+												<li>													
+													<a>
+														<select id="languageSwitcher">
+															<option value="en" class="options">En</option>
+															<option value="de" class="options">De</option>
+														</select>
+													</a>
+												</li>
 											</ul>
 										</div>
 
@@ -99,6 +107,16 @@
 		<!-- banner start --> 
 		<div id="banner" class="banner">
 			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">					 
+						<div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+								<h1>Saju Software</h1>
+								<h3 class="padding-top30">Your trusted partner in PLM solutions.</h3>
+							</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- banner end -->
 
@@ -107,7 +125,7 @@
 			<div class="container">
 				<div class="row " style="margin-top: 0px;">
 					<div class="col-sm-12">
-						<h2>welcome to <strong><span> SAJU Software </span> </strong> - Your Partner in PLM Solutions</h2>
+						<h2>Welcome to <strong><span> SAJU Software </span> </strong> - Your Trusted Partner in PLM Solutions</h2>
 						<p>
 							Our mission is to empower your firm with the necessary tools, services and best practices to boost productivity,drive innovation, and achieve prosperity in today's rapidly changing digital landscape.
 						</p>
@@ -120,7 +138,7 @@
 		<!-- What we offer section start --> 
 		<section class="section transprant-bg pclear secPadding">
 			<div class="container no-view" data-animation-effect="fadeIn">
-				<h1 id="services" class="title text-center">What we offer</h1>
+				<h1 id="services" class="title text-center" data-translate="services_title">What We Offer</h1>
 				<div class="space"></div>
 				<div class="row">
 					<div class="col-md-4">
@@ -591,6 +609,7 @@
 
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js" defer></script>
+		<script type="text/javascript" src="js/translator.js"></script>
 
 		<!-- Contact Us Form -->
 		<script>
