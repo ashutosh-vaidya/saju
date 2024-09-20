@@ -1108,9 +1108,6 @@ textarea {
 	padding: 7px 0;
 	margin: 2px;
 }
-
-
-
 /* Three columns side by side */
 .column {
 	float: left;
@@ -1210,7 +1207,7 @@ textarea {
 }
 
 #clients .client-logo {
-	padding: 10px;
+	padding: 0 10px;
 	/* Reduce padding to avoid cutting off */
 	display: flex;
 	justify-content: center;
@@ -1236,6 +1233,7 @@ textarea {
 	/* Make logos grow a bit on hover */
 	border-color: #a0c4ff;
 	/* Optional: Change border color on hover */
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 #clients .client-logo img {
@@ -1260,6 +1258,7 @@ textarea {
 	#clients .client-logo {
 		padding: 10px;
 		height: 160px;
+		filter: grayscale(0%);
 	}
 
 	#clients img {

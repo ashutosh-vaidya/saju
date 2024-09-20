@@ -108,6 +108,5 @@
 				$(".modal").prependTo( "body" );
 			});
 		}
-
 	}); // End document ready
 })(this.jQuery);
